@@ -187,7 +187,6 @@ ModuleControlBlocks.prototype.isReady = function() {
   for (var i = 0, n = this.blocks_.length; i < n; ++i) {
     var mcb = this.blocks_[i];
     if (!mcb.isReady()) {
-	alert('mcb');
       return false;
     }
   }
@@ -195,7 +194,6 @@ ModuleControlBlocks.prototype.isReady = function() {
   // Are there any pending dynamic resources (e.g. styles, scripts)?
   if (!ModuleControlBlocks.dynamicResources_.isReady()) {
     // No, we're still waiting on one or more dynamic resources.
-	alert('dynamic resources');
     return false;
   }
 
