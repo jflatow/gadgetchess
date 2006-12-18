@@ -507,6 +507,8 @@ function __gwt_onUnloadHostedMode() {
 function __gwt_latchAndLaunch() {
   var ready = true;
   
+alert('test');
+
   // Are there any compilations still pending?
   if (ready && !__gwt_moduleControlBlocks.isReady()) {
     // Yes, we're still waiting on one or more compilations.
