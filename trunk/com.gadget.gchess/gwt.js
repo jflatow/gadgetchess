@@ -187,6 +187,7 @@ ModuleControlBlocks.prototype.isReady = function() {
   for (var i = 0, n = this.blocks_.length; i < n; ++i) {
     var mcb = this.blocks_[i];
     if (!mcb.isReady()) {
+	alert('mcb');
       return false;
     }
   }
@@ -194,6 +195,7 @@ ModuleControlBlocks.prototype.isReady = function() {
   // Are there any pending dynamic resources (e.g. styles, scripts)?
   if (!ModuleControlBlocks.dynamicResources_.isReady()) {
     // No, we're still waiting on one or more dynamic resources.
+	alert('dynamic resources');
     return false;
   }
 
@@ -509,14 +511,12 @@ function __gwt_latchAndLaunch() {
   
   // Are there any compilations still pending?
   if (ready && !__gwt_moduleControlBlocks.isReady()) {
-	alert('compilations');
     // Yes, we're still waiting on one or more compilations.
     ready = false;
   }
 
   // Has the host html onload event fired?
   if (ready && !__gwt_isHostPageLoaded) {
-	alert('no onload');
     // No, the host html page hasn't fully loaded.
     ready = false;
   }
