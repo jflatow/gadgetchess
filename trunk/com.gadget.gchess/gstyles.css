@@ -1,0 +1,103 @@
+.flatown {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	vertical-align: top;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.head {
+	font-size: 14px;
+}
+
+.content {
+	vertical-align: middle;
+	text-align: center;
+	margin: auto;
+	clear: both;
+	height: 65%;
+	width: 100%;
+}
+
+.controls {
+	margin: auto;
+	clear: both;
+	height: 31%;
+	width: 100%;
+}
+
+.chess {
+	font-size: 1em;
+	vertical-align: middle;
+	text-align: center;
+	margin: auto;
+	height: 250px;
+	width: 225px;
+}
+
+.letters {
+	width: 200px;
+	height: 20px;
+}
+
+.numbers {
+	width: 20px;
+	height: 200px;
+}
+
+.board {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border: 2px black solid;
+	float: left;
+}
+
+.row {
+	clear: right;
+	width: 100%;
+	height: 25px;
+}
+
+.whitesquare {
+	width: 25px;
+	height: 25px;
+	float: left;
+	background-color: #FFFFFF;
+	z-index: -2;
+}
+
+.blacksquare {
+	width: 25px;
+	height: 25px;
+	float: left;
+	background-color: #000000;
+	z-index: -3;
+}
+
+.blackpiece {
+	color: #009900;
+}
+
+.whitepiece {
+	color: #FF9933
+}
+
+a:link {
+	text-decoration: none;
+	color: #3366CC;
+}
+a:visited {
+	text-decoration: none;
+	color: #3366CC;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000066;
+}
+a:active {
+	text-decoration: none;
+	color: #3366CC;
+}
