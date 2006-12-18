@@ -507,16 +507,16 @@ function __gwt_onUnloadHostedMode() {
 function __gwt_latchAndLaunch() {
   var ready = true;
   
-alert('test');
-
   // Are there any compilations still pending?
   if (ready && !__gwt_moduleControlBlocks.isReady()) {
+	alert('compilations');
     // Yes, we're still waiting on one or more compilations.
     ready = false;
   }
 
   // Has the host html onload event fired?
   if (ready && !__gwt_isHostPageLoaded) {
+	alert('no onload');
     // No, the host html page hasn't fully loaded.
     ready = false;
   }
