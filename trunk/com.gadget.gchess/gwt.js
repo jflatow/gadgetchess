@@ -507,7 +507,6 @@ function __gwt_onUnloadHostedMode() {
 function __gwt_latchAndLaunch() {
   var ready = true;
   
-  alert("test");
   // Are there any compilations still pending?
   if (ready && !__gwt_moduleControlBlocks.isReady()) {
     // Yes, we're still waiting on one or more compilations.
@@ -553,6 +552,9 @@ function __gwt_loadModules() {
  * The very first thing to run, and it runs exactly once unconditionally.
  */
 function __gwt_bootstrap() {
+  alert("test");
+
+
   // Hook onunload for hosted mode.
   if (__gwt_isHosted()) {
     __gwt_onUnloadHostedMode.oldUnloadHandler = window.onunload;
