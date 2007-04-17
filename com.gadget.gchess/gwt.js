@@ -552,9 +552,6 @@ function __gwt_loadModules() {
  * The very first thing to run, and it runs exactly once unconditionally.
  */
 function __gwt_bootstrap() {
-  alert("test");
-
-
   // Hook onunload for hosted mode.
   if (__gwt_isHosted()) {
     __gwt_onUnloadHostedMode.oldUnloadHandler = window.onunload;
@@ -578,4 +575,6 @@ function __gwt_bootstrap() {
 }
 
 // Go.
+alert("test");
+
 __gwt_bootstrap();
