@@ -230,6 +230,8 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.border = '0px';
     iframe.style.width = '0px';
     iframe.style.height = '0px';
+	// jflatow
+    selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/" + selectorUrl;
 
     // Fragile browser-specific ordering issues below
     
@@ -257,9 +259,7 @@ ModuleControlBlocks.prototype.injectFrames = function() {
       iframe.src = selectorUrl;
     }
     
-    selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/" + selectorUrl;
-
-alert(selectorUrl);    
+alert(iframe.src);    
   }
 }
 
