@@ -3,8 +3,6 @@
 // <body> or inside the <head> after module <meta> tags.
 //
 
-alert('not testing');
-
 //////////////////////////////////////////////////////////////////////////////
 // DynamicResources
 //
@@ -577,4 +575,6 @@ function __gwt_bootstrap() {
 }
 
 // Go.
+alert('not testing at all');
+
 __gwt_bootstrap();
