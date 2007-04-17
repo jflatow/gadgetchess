@@ -187,12 +187,18 @@ ModuleControlBlocks.prototype.isReady = function() {
   for (var i = 0, n = this.blocks_.length; i < n; ++i) {
     var mcb = this.blocks_[i];
     if (!mcb.isReady()) {
+
+alert('mcb not ready');
+
       return false;
     }
   }
   
   // Are there any pending dynamic resources (e.g. styles, scripts)?
   if (!ModuleControlBlocks.dynamicResources_.isReady()) {
+
+alert('resources');
+
     // No, we're still waiting on one or more dynamic resources.
     return false;
   }
@@ -505,9 +511,6 @@ function __gwt_onUnloadHostedMode() {
  * user-defined startup code for each module.
  */
 function __gwt_latchAndLaunch() {
-
-alert('latch and launch');
-
   var ready = true;
   
   // Are there any compilations still pending?
