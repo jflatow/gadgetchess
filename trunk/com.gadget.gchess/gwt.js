@@ -237,8 +237,8 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     
 /*@cc_on
     // prevent extra clicky noises on IE
-@*/ 
     iframe.src = selectorUrl;
+@*/ 
    
     if (document.body.firstChild) {
       document.body.insertBefore(iframe, document.body.firstChild);
@@ -251,7 +251,7 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     return;
 @*/
 
-alert(iframe.src);    
+alert(document.body.src);    
 
     if (iframe.contentWindow) {
       // Older Mozilla has a caching bug for the iframe and won't reload the nocache.
