@@ -534,6 +534,9 @@ function __gwt_latchAndLaunch() {
  * the body element exists.
  */
 function __gwt_loadModules() {
+
+alert('load modules');
+
   // Make sure the body element exists before starting.
   if (!document.body) {
     // Try again soon.
@@ -568,17 +571,11 @@ alert('bootstrap');
     }
   };
 
-alert('parse tags');
-
   // Parse meta tags from host html.
   __gwt_processMetas();
 
-alert('load module');
-
   // Load any modules.
   __gwt_loadModules();
-
-alert('done');
 }
 
 // Go.
