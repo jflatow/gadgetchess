@@ -252,11 +252,10 @@ ModuleControlBlocks.prototype.injectFrames = function() {
 @*/
 
     if (iframe.contentWindow) {
-alert(iframe.contentWindow);
       // Older Mozilla has a caching bug for the iframe and won't reload the nocache.
       iframe.contentWindow.location.replace(selectorUrl);
+alert(iframe.contentWindow.location);
     } else {	
-alert('old safari');
       // Older Safari doesn't have a contentWindow.
       iframe.src = selectorUrl;
     }    
