@@ -505,6 +505,9 @@ function __gwt_onUnloadHostedMode() {
  * user-defined startup code for each module.
  */
 function __gwt_latchAndLaunch() {
+
+alert('latch and launch');
+
   var ready = true;
   
   // Are there any compilations still pending?
@@ -521,6 +524,9 @@ function __gwt_latchAndLaunch() {
   
   // Are we ready to run user code?
   if (ready) {
+
+alert('running code');
+
     // Yes: run entry points.
     __gwt_moduleControlBlocks.run();
   } else {
@@ -534,9 +540,6 @@ function __gwt_latchAndLaunch() {
  * the body element exists.
  */
 function __gwt_loadModules() {
-
-alert('load modules');
-
   // Make sure the body element exists before starting.
   if (!document.body) {
     // Try again soon.
