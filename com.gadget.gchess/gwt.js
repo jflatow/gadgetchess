@@ -512,12 +512,18 @@ alert('latch and launch');
   
   // Are there any compilations still pending?
   if (ready && !__gwt_moduleControlBlocks.isReady()) {
+
+alert('compilations!');
+
     // Yes, we're still waiting on one or more compilations.
     ready = false;
   }
 
   // Has the host html onload event fired?
   if (ready && !__gwt_isHostPageLoaded) {
+
+alert('not loaded!');
+
     // No, the host html page hasn't fully loaded.
     ready = false;
   }
@@ -558,7 +564,6 @@ function __gwt_loadModules() {
  * The very first thing to run, and it runs exactly once unconditionally.
  */
 function __gwt_bootstrap() {
-alert('bootstrap');
   // Hook onunload for hosted mode.
   if (__gwt_isHosted()) {
     __gwt_onUnloadHostedMode.oldUnloadHandler = window.onunload;
