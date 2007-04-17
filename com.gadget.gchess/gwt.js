@@ -552,6 +552,7 @@ function __gwt_loadModules() {
  * The very first thing to run, and it runs exactly once unconditionally.
  */
 function __gwt_bootstrap() {
+alert('bootstrap');
   // Hook onunload for hosted mode.
   if (__gwt_isHosted()) {
     __gwt_onUnloadHostedMode.oldUnloadHandler = window.onunload;
@@ -567,14 +568,16 @@ function __gwt_bootstrap() {
     }
   };
 
+alert('parse tags');
+
   // Parse meta tags from host html.
   __gwt_processMetas();
+
+alert('load module');
 
   // Load any modules.
   __gwt_loadModules();
 }
 
 // Go.
-alert('not testing at all');
-
 __gwt_bootstrap();
