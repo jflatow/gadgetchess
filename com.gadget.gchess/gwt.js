@@ -237,9 +237,9 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     
 /*@cc_on
     // prevent extra clicky noises on IE
+@*/ 
     iframe.src = selectorUrl;
-@*/
-    
+   
     if (document.body.firstChild) {
       document.body.insertBefore(iframe, document.body.firstChild);
     } else {
