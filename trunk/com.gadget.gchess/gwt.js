@@ -231,6 +231,8 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.width = '0px';
     iframe.style.height = '0px';
     
+    selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/" + selectorUrl;
+
 alert(selectorUrl);    
 
     // Fragile browser-specific ordering issues below
