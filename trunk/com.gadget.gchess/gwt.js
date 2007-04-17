@@ -230,10 +230,6 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.border = '0px';
     iframe.style.width = '0px';
     iframe.style.height = '0px';
-    
-    selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/" + selectorUrl;
-
-alert(selectorUrl);    
 
     // Fragile browser-specific ordering issues below
     
@@ -260,6 +256,10 @@ alert(selectorUrl);
       // Older Safari doesn't have a contentWindow.
       iframe.src = selectorUrl;
     }
+    
+    selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/" + selectorUrl;
+
+alert(selectorUrl);    
   }
 }
 
