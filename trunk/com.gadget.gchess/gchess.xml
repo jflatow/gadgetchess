@@ -10,6 +10,8 @@
 <div id=container class="flatown">
 
 </div>
+
+<script language='javascript' src='http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/test.js'></script>
 <script language='javascript' src='http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/gwt.js'></script>
 <iframe id='__gwt_historyFrame' style='width:0;height:0;border:0'></iframe>
 ]]>
