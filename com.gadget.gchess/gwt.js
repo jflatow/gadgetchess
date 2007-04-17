@@ -1,5 +1,3 @@
-alert("test");
-
 // Copyright 2006 Google Inc. All Rights Reserved.
 // This startup script should be included in host pages either just after
 // <body> or inside the <head> after module <meta> tags.
