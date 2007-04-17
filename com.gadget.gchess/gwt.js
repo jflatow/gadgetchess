@@ -232,7 +232,7 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.height = '0px';
 	// jflatow
     selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/" + selectorUrl;
-
+iframe.src = selectorUrl;
     // Fragile browser-specific ordering issues below
     
 /*@cc_on
