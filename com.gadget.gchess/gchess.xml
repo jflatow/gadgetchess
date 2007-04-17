@@ -8,7 +8,7 @@
  <![CDATA[
 <meta name='gwt:module' content='com.gadget.gchess'>
 <div id=container class="flatown">
-<iframe src='http://gadgetchess.googlecode.com/sv/trunk/com.gadget.chess/gchess.html'></iframe>
+<iframe src='http://gadgetchess.googlecode.com/svn/trunk/com.gadget.chess/gchess.html'></iframe>
 </div>
 <script language='javascript' src='http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/gwt.js'></script>
 <iframe id='__gwt_historyFrame' style='width:0;height:0;border:0'></iframe>
