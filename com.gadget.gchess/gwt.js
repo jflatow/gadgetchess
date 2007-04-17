@@ -240,8 +240,6 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.src = selectorUrl;
 @*/
     
-alert(iframe.src);    
-
     if (document.body.firstChild) {
       document.body.insertBefore(iframe, document.body.firstChild);
     } else {
@@ -256,7 +254,8 @@ alert(iframe.src);
     if (iframe.contentWindow) {
       // Older Mozilla has a caching bug for the iframe and won't reload the nocache.
       iframe.contentWindow.location.replace(selectorUrl);
-    } else {
+    } else {	
+alert(iframe.src);    
       // Older Safari doesn't have a contentWindow.
       iframe.src = selectorUrl;
     }    
