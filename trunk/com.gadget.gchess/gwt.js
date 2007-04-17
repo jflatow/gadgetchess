@@ -577,6 +577,8 @@ alert('load module');
 
   // Load any modules.
   __gwt_loadModules();
+
+alert('done');
 }
 
 // Go.
