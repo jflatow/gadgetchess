@@ -187,18 +187,12 @@ ModuleControlBlocks.prototype.isReady = function() {
   for (var i = 0, n = this.blocks_.length; i < n; ++i) {
     var mcb = this.blocks_[i];
     if (!mcb.isReady()) {
-
-alert('mcb not ready');
-
       return false;
     }
   }
   
   // Are there any pending dynamic resources (e.g. styles, scripts)?
   if (!ModuleControlBlocks.dynamicResources_.isReady()) {
-
-alert('resources');
-
     // No, we're still waiting on one or more dynamic resources.
     return false;
   }
@@ -515,27 +509,18 @@ function __gwt_latchAndLaunch() {
   
   // Are there any compilations still pending?
   if (ready && !__gwt_moduleControlBlocks.isReady()) {
-
-alert('compilations!');
-
     // Yes, we're still waiting on one or more compilations.
     ready = false;
   }
 
   // Has the host html onload event fired?
   if (ready && !__gwt_isHostPageLoaded) {
-
-alert('not loaded!');
-
     // No, the host html page hasn't fully loaded.
     ready = false;
   }
   
   // Are we ready to run user code?
   if (ready) {
-
-alert('running code');
-
     // Yes: run entry points.
     __gwt_moduleControlBlocks.run();
   } else {
