@@ -251,8 +251,9 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     return;
 @*/
 
-    if (iframe.contentWindow) {
 alert(iframe.src);    
+
+    if (iframe.contentWindow) {
       // Older Mozilla has a caching bug for the iframe and won't reload the nocache.
       iframe.contentWindow.location.replace(selectorUrl);
     } else {	
