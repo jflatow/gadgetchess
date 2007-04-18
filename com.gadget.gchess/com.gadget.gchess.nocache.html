@@ -97,7 +97,9 @@ function injectExternalFiles() {
 }
 
 function onLoad() {
-alert($wnd.__gwt_tryGetModuleControlBlock);
+for (var i in $wnd) {
+alert($wnd[i]);
+}
   if (!$wnd.__gwt_isHosted) return;
   injectExternalFiles();
   if (!$wnd.__gwt_isHosted()) {
