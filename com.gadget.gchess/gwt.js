@@ -232,7 +232,6 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.height = '0px';
 	// jflatow
     selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/" + selectorUrl;
-    iframe.src = selectorUrl;
 
     // Fragile browser-specific ordering issues below
     
@@ -259,8 +258,6 @@ ModuleControlBlocks.prototype.injectFrames = function() {
       // Older Safari doesn't have a contentWindow.
       iframe.src = selectorUrl;
     }    
-
-alert(iframe.src);
   }
 }
 
