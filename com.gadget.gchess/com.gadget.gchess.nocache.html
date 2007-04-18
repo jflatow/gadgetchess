@@ -85,6 +85,7 @@ function selectScript() {
 }
 
 function injectExternalFiles() {
+alert('injecting');
   var mcb = $wnd.__gwt_tryGetModuleControlBlock(location.search);
   if (!mcb) return;
   var base = mcb.getBaseURL();
@@ -97,7 +98,6 @@ function injectExternalFiles() {
 }
 
 function onLoad() {
-alert('loading');
   if (!$wnd.__gwt_isHosted) return;
   injectExternalFiles();
   if (!$wnd.__gwt_isHosted()) {
