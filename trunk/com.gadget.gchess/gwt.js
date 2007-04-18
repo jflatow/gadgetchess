@@ -524,7 +524,6 @@ function __gwt_latchAndLaunch() {
   // Are we ready to run user code?
   if (ready) {
     // Yes: run entry points.
-alert('launching');
     __gwt_moduleControlBlocks.run();
   } else {
     // No: try again soon.
