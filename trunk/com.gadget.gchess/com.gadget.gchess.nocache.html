@@ -100,6 +100,7 @@ function onLoad() {
   if (!$wnd.__gwt_isHosted) return;
   injectExternalFiles();
   if (!$wnd.__gwt_isHosted()) {
+alert('hosted');
     selectScript();
   }
   else {
