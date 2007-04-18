@@ -6,12 +6,7 @@
  <UserPref name="lastGame" default_value="" datatype="hidden"/>
  <Content type="html">
  <![CDATA[
-<meta name='gwt:module' content='com.gadget.gchess'>
-<div id=container class="flatown">
-
-</div>
-<script language='javascript' src='http://www.flatown.com/gchess/com.gadget.gchess/gwt.js'></script>
-<iframe id='__gwt_historyFrame' style='width:0;height:0;border:0'></iframe>
+<iframe src='http://www.flatown.com/gchess/com.gadget.gchess/gchess.html'></iframe>
 ]]>
  </Content> 
 </Module>
