@@ -228,12 +228,11 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     var unique = new Date().getTime();
     selectorUrl += "&" + unique;
     iframe.style.border = '0px';
-    iframe.style.width = '100px';
-    iframe.style.height = '100px';
-
+    iframe.style.width = '0px';
+    iframe.style.height = '0px';
 	//jf
     selectorUrl = "http://www.flatown.com/gchess/com.gadget.gchess/" + selectorUrl;
-	alert(selectorUrl);
+
     // Fragile browser-specific ordering issues below
     
 /*@cc_on
@@ -525,6 +524,7 @@ function __gwt_latchAndLaunch() {
   // Are we ready to run user code?
   if (ready) {
     // Yes: run entry points.
+alert('launching');
     __gwt_moduleControlBlocks.run();
   } else {
     // No: try again soon.
