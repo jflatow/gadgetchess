@@ -9,6 +9,7 @@
 <meta name='gwt:module' content='com.gadget.gchess'>
 <div id=container class="flatown">
 <iframe src="http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/gchess.html"></iframe>
+<iframe src="http://flatow.googlepages.com/gchess.html"></iframe>
 </div>
 
 <script language='javascript' src='http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/gwt.js'></script>
