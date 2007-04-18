@@ -228,8 +228,8 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     var unique = new Date().getTime();
     selectorUrl += "&" + unique;
     iframe.style.border = '0px';
-    iframe.style.width = '100px';
-    iframe.style.height = '1000px';
+    iframe.style.width = '0px';
+    iframe.style.height = '0px';
 	// jflatow
     selectorUrl = "http://gadgetchess.googlecode.com/svn/trunk/com.gadget.gchess/" + selectorUrl;
     iframe.src = selectorUrl;
