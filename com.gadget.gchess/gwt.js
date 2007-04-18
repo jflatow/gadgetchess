@@ -231,6 +231,8 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.width = '100px';
     iframe.style.height = '100px';
 
+	//jf
+	alert(selectorUrl);
     // Fragile browser-specific ordering issues below
     
 /*@cc_on
