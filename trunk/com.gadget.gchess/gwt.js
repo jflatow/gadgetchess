@@ -231,7 +231,6 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.width = '0px';
     iframe.style.height = '0px';
 	// jflatow
-    selectorUrl = "http://flatow.googlepages.com/" + selectorUrl;
 	iframe.src = selectorUrl;
 
     // Fragile browser-specific ordering issues below
