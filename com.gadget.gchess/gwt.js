@@ -228,10 +228,8 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     var unique = new Date().getTime();
     selectorUrl += "&" + unique;
     iframe.style.border = '0px';
-    iframe.style.width = '0px';
-    iframe.style.height = '0px';
-
-alert('made it')
+    iframe.style.width = '100px';
+    iframe.style.height = '100px';
 
     // Fragile browser-specific ordering issues below
     
