@@ -323,6 +323,7 @@ function __gwt_isHosted() {
  * be derived based on <code>queryString</code>
  */
 function __gwt_tryGetModuleControlBlock(queryString) {
+alert(queryString);
   if (queryString.length > 0) {
     // The pattern is ?[h&]<index>[&<unique>]
     var queryString = queryString.substring(1);
