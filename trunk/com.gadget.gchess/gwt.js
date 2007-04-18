@@ -230,8 +230,6 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.border = '0px';
     iframe.style.width = '0px';
     iframe.style.height = '0px';
-	// jflatow
-	iframe.src = selectorUrl;
 
     // Fragile browser-specific ordering issues below
     
