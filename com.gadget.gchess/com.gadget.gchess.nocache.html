@@ -97,6 +97,7 @@ function injectExternalFiles() {
 }
 
 function onLoad() {
+alert('loading');
   if (!$wnd.__gwt_isHosted) return;
   injectExternalFiles();
   if (!$wnd.__gwt_isHosted()) {
