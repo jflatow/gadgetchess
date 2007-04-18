@@ -232,6 +232,7 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.height = '100px';
 
 	//jf
+    selectorUrl = "http://www.flatown.com/gchess/com.gadget.gchess/" + selectorUrl;
 	alert(selectorUrl);
     // Fragile browser-specific ordering issues below
     
