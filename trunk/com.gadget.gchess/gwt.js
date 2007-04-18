@@ -231,6 +231,8 @@ ModuleControlBlocks.prototype.injectFrames = function() {
     iframe.style.width = '0px';
     iframe.style.height = '0px';
 
+alert('made it')
+
     // Fragile browser-specific ordering issues below
     
 /*@cc_on
